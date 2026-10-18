@@ -22,7 +22,21 @@ function Btn1(props){
 function NavBarT1() {
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar" style={{ position: 'relative' }}>
+        {/* <svg className="circuit-svg" width="100%" height="100%">
+          <path 
+            className="circuit-line-1" 
+            d="M 120 60 H 170" 
+          />
+          <path 
+            className="circuit-line-2" 
+            d="M 170 60 L 210 90" 
+          />
+          <path 
+            className="circuit-line-3" 
+            d="M 170 60 L 210 30" 
+          />
+        </svg> */}
         {/* <!-- Website Logo --> */}
         <div className="logo"><Logo/></div>
         

@@ -31,6 +31,7 @@
     font-weight: 800;
     font-size: 20px;
     color: var(--accent);
+    z-index: 2;
 }
 
 .logo-img {
@@ -61,4 +62,105 @@
     background-color: var(--accent);
     border-color: var(--accent);
     color: #ffffff;
+}
+
+.circuit-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Allows clicks to pass right through the lines to your buttons */
+  z-index: 1;           /* Sits behind your links, but above the background */
+}
+
+.circuit-line-1 {
+  stroke: var(--accent);
+  stroke-width: 2;
+  fill: none;
+  /* stroke-dasharray: 450;
+  stroke-dashoffset: 450; */
+  
+  /* Total cycle time set to 6 seconds */
+  /* animation: line1 6s ease-in-out infinite; */
+}
+
+@keyframes line1 {
+  /* 1. DRAW: Starts hidden on the left, draws across to the right (takes ~1.5s) */
+  0% {
+    stroke-dashoffset: 450;
+  }
+  25% {
+    stroke-dashoffset: 0;
+  }
+  
+  /* 2. WAIT: Stays fully drawn and static on screen for about 3 seconds */
+  70% {
+    stroke-dashoffset: 0;
+  }
+  
+  /* 3. REWIND: Smoothly rewinds/slides backward to hide itself again (takes ~1.5s) */
+  100% {
+    stroke-dashoffset: 450;
+  }
+}
+
+.circuit-line-2 {
+  stroke: var(--accent);
+  stroke-width: 2;
+  fill: none;
+  /* stroke-dasharray: 450;
+  stroke-dashoffset: 450; */
+  
+  /* Total cycle time set to 6 seconds */
+  /* animation: line2 6s ease-in-out infinite; */
+}
+
+@keyframes line2 {
+  /* 1. DRAW: Starts hidden on the left, draws across to the right (takes ~1.5s) */
+  0% {
+    stroke-dashoffset: 450;
+  }
+  25% {
+    stroke-dashoffset: 0;
+  }
+  
+  /* 2. WAIT: Stays fully drawn and static on screen for about 3 seconds */
+  70% {
+    stroke-dashoffset: 0;
+  }
+  
+  /* 3. REWIND: Smoothly rewinds/slides backward to hide itself again (takes ~1.5s) */
+  100% {
+    stroke-dashoffset: 450;
+  }
+}
+
+.circuit-line-3 {
+  stroke: var(--accent);
+  stroke-width: 2;
+  fill: none;
+  /* stroke-dasharray: 450;
+  stroke-dashoffset: 450; */
+  
+  /* Total cycle time set to 6 seconds */
+  /* animation: line3 6s ease-in-out infinite; */
+}
+
+@keyframes line3 {
+  /* 1. DRAW: Starts hidden on the left, draws across to the right (takes ~1.5s) */
+  0% {
+    stroke-dashoffset: 450;
+  }
+  25% {
+    stroke-dashoffset: 0;
+  }
+  
+  /* 2. WAIT: Stays fully drawn and static on screen for about 3 seconds */
+  70% {
+    stroke-dashoffset: 0;
+  }
+  
+  /* 3. REWIND: Smoothly rewinds/slides backward to hide itself again (takes ~1.5s) */
+  100% {
+    stroke-dashoffset: 450;
+  }
 }
