@@ -6,3 +6,34 @@
     color: white;
     padding: 15px 30px;
 }
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+.logo{
+    font-weight: 800;
+    font-size: 20px;
+    color: orange;
+}
+
+.logo-img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+}
