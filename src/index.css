@@ -9,14 +9,31 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: 'Segoe-UI';
+  src: url('./assets/Segoe-UI_Font/segoeuithibd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* ==========================================
    2. COLOR VARIABLES (Easy to change later)
    ========================================== */
 :root {
-  --bg-color: #121212;
-  --text-color: #e0e0e0;
-  --accent-color: #3b82f6;
-  --font-main: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* Rich, dark slate-charcoal background */
+  --bg-main: #141619;       
+  --bg-surface: #1d2126;    /* Distinct surface for cards and navbar */
+  
+  --text-main: #f3f4f6;
+  --text-muted: #9ca3af;
+  
+  /* Primary Red Accents */
+  --accent: #820d0d;        /* Your exact crimson red */
+  --accent-hover: #a51111;  /* A slightly brighter, glowing red for hover effects */
+  --highlight: #ef4444;     /* A vibrant bright red/coral for badges or highlights */
+  
+  --border-color: #323842;  /* Clean, visible borders */
+  --font-main: 'Segoe-UI', sans-serif;
 }
 
 /* ==========================================
@@ -30,11 +47,12 @@ body {
 
 body {
   font-family: var(--font-main);
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: var(--bg-main);   /* Changed from --bg-color */
+  color: var(--text-main);             /* Changed from --text-color */
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
+
 
 /* Makes sure React's wrapper container spans the full height */
 #root {
@@ -44,10 +62,11 @@ body {
 }
 
 /* ==========================================
-   4. BASE ELEMENTS
-   ========================================== */
+4. BASE ELEMENTS
+========================================== */
+
 a {
-  color: var(--accent-color);
+  color: var(--accent);               /* Changed from --accent-color */
   text-decoration: none;
 }
 

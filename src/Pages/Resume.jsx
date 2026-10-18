@@ -1,0 +1,1 @@
+export default function Resume() { return <h1>Resume Document View</h1>; }

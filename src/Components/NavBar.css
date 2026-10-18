@@ -1,39 +1,64 @@
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(27, 30, 33);
-    color: white;
+    background-color: var(--bg-surface);
+    color: var(--text-main);
     padding: 15px 30px;
+    border-bottom: 1px solid var(--border-color);
 }
 
-.nav-links{
+.nav-links {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 15px;
     margin: 0;
     padding: 0;
 }
 
 .nav-links a {
-    color: white;
+    color: var(--text-main);
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
-.nav-links a:hover{
-    color: orange;
+.nav-links a:hover {
+    color: var(--accent);
     text-decoration: underline;
 }
 
-.logo{
+.logo {
     font-weight: 800;
     font-size: 20px;
-    color: orange;
+    color: var(--accent);
 }
 
-.logo-img{
+.logo-img {
     width: 90px;
     height: 90px;
     object-fit: cover;
     border-radius: 50%;
+    border: solid 2px var(--accent);
+}
+
+.btn1 {
+    font-family: var(--font-main);
+    background-color: var(--bg-surface);
+    border: solid 2px var(--border-color);
+    color: var(--text-main);
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 3px 5px var(--bg-main);
+    transition: all 0.3s ease;
+}
+
+.btn1:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: #ffffff;
 }
