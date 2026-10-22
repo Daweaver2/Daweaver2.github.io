@@ -6,6 +6,8 @@ import About from './Pages/About.jsx'
 import Portfolio from './Pages/Portfolio.jsx'
 import Resume from './Pages/Resume.jsx'
 
+import './index.css'
+
 function App() {
   return (
     <>

@@ -1,1 +1,6 @@
-export default function Home() { return <h1>Home Page Content</h1>; }
+import Carousel from "../Components/Carousel.jsx"
+
+export default function Home() 
+{ 
+    return <Carousel/>;
+}
