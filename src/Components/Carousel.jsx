@@ -9,7 +9,7 @@ const DEFAULT_SLIDES = [
     id: 1,
     title: 'Nashville Incident Explorer',
     description: 'A full-stack application built with React, Node, and MySQL to view municipal data.',
-    bg: '#1e293b',
+    bg: '#323842',
     backgroundImage: `url(${nie})`,
     
   },
@@ -17,14 +17,14 @@ const DEFAULT_SLIDES = [
     id: 2,
     title: 'HackMT 2026',
     description: 'Bassline: A music player software meant to run locally stored music not streamed.',
-    bg: '#334155',
+    bg: '#323842',
     backgroundImage: `url(${hack26})`,
   },
   {
     id: 3,
     title: 'HackMT 2025',
     description: 'Breachers Chokepoint: A top down game to simulate training military personel',
-    bg: '#1e293b',
+    bg: '#323842',
     backgroundImage: `url(${hack25})`,
   },
 ];
