@@ -1,24 +1,31 @@
 import React, { useState, useEffect } from 'react';
+import hack25 from '../assets/HackMT2025.jpg';
+import hack26 from '../assets/HackMT2026.jpg';
+import nie from '../assets/NIE_Demo.png'
 import './Carousel.css';
 
 const DEFAULT_SLIDES = [
   {
     id: 1,
-    title: 'Featured Project 1',
-    description: 'A full-stack application built with React, Node, and MySQL.',
-    bg: '#1e293b', // Replace with image URL or custom content
+    title: 'Nashville Incident Explorer',
+    description: 'A full-stack application built with React, Node, and MySQL to view municipal data.',
+    bg: '#1e293b',
+    backgroundImage: `url(${nie})`,
+    
   },
   {
     id: 2,
-    title: 'Featured Project 2',
-    description: 'Desktop software built for high performance and low latency.',
+    title: 'HackMT 2026',
+    description: 'Bassline: A music player software meant to run locally stored music not streamed.',
     bg: '#334155',
+    backgroundImage: `url(${hack26})`,
   },
   {
     id: 3,
-    title: 'Featured Project 3',
-    description: 'Hardware, microcontrollers, and 3D design projects.',
-    bg: '#475569',
+    title: 'HackMT 2025',
+    description: 'Breachers Chokepoint: A top down game to simulate training military personel',
+    bg: '#1e293b',
+    backgroundImage: `url(${hack25})`,
   },
 ];
 
@@ -70,7 +77,10 @@ export default function Carousel({ slides = DEFAULT_SLIDES, autoPlayInterval = 5
                 key={slide.id || index}
                 className={`carousel-slide ${isActive ? 'active' : ''}`}
                 onClick={() => setCurrentIndex(index)}
-                style={{ backgroundColor: slide.bg }}
+                style={{ 
+                  backgroundColor: slide.bg,
+                  backgroundImage: slide.backgroundImage,
+                 }}
               >
                 <div className="slide-content">
                   <h2>{slide.title}</h2>

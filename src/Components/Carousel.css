@@ -29,6 +29,9 @@
   padding: 30px;
   box-sizing: border-box;
   cursor: pointer;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   
   /* Semi-transparent & slightly smaller for non-active slides */
   opacity: 0.3;
@@ -47,6 +50,9 @@
 .slide-content {
   color: #ffffff;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 12px 16px;
+  border-radius: 8px;
 }
 
 .slide-content h2 {
